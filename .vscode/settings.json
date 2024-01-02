@@ -1,0 +1,36 @@
+{
+    "python.defaultInterpreterPath": ".\\env\\Scripts\\python.exe",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.autoFormatStrings": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+    },
+    "flake8.importStrategy": "fromEnvironment",
+    "flake8.args": [
+        "--config=./.flake8"
+    ],
+    "black-formatter.importStrategy": "fromEnvironment",
+    "black-formatter.args": [
+        "--line-length",
+        "120",
+    ],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./services",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+
+}
